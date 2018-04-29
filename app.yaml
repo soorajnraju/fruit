@@ -6,4 +6,4 @@ handlers:
   static_dir: assets/css
 
 - url: /.*
-script: index.php
+  script: index.php

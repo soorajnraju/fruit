@@ -1,6 +1,6 @@
 <?php
 require_once ('inc/MysqliDb.php');
-$db = new MysqliDb ('localhost', 'root', 'root', 'test');
+$db = new MysqliDb (getenv('MYSQL_DSN'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), 'blog');
 $fruit = $db->get('fruit');
 ?>
 <!DOCTYPE html>

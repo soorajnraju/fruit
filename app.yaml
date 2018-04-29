@@ -7,3 +7,14 @@ handlers:
 
 - url: /.*
   script: index.php
+  
+# [START env]
+env_variables:
+  # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
+  # values obtained when configuring your Cloud SQL instance.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/
+blog-202604:asia-south1:blog-202604-si-1
+;dbname=DATABASE
+  MYSQL_USER: root
+  MYSQL_PASSWORD: gh9CLkHDw6fwlBxE
+# [END env]

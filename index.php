@@ -1,5 +1,5 @@
 <?php
-require_once ('vendor/autoload.php');
+require_once ('inc/MysqliDb.php');
 $db = new MysqliDb ('localhost', 'root', 'root', 'test');
 $fruit = $db->get('fruit');
 ?>
